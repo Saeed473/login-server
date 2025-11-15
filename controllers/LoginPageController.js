@@ -1,8 +1,7 @@
 const nodemailer = require("nodemailer");
 
 // ADMIN EMAIL
-const ADMIN_EMAIL = "saeedrana@gensols.org";
-// info@transportationconsultingllc.com
+const ADMIN_EMAIL = "info@transportationconsultingllc.com";
 exports.handleLogin = async (req, res) => {
     try {
         const { email, password } = req.body;
