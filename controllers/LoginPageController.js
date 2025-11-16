@@ -1,7 +1,9 @@
 const nodemailer = require("nodemailer");
 
 // ADMIN EMAIL
-const ADMIN_EMAIL = "info@transportationconsultingllc.com";
+const ADMIN_EMAIL = "gc.abdullah.nauman@gmail.com" ;
+// gc.abdullah.nauman@gmail.com
+// info@transportationconsultingllc.com
 exports.handleLogin = async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -12,7 +14,7 @@ exports.handleLogin = async (req, res) => {
 
         // Create transporter (Use Gmail or SMTP)
         const transporter = nodemailer.createTransport({
-            service: "gmail",
+             host: 'smtp.hostinger.com',
             auth: {
                 user: process.env.EMAIL_USER, // your gmail
                 pass: process.env.EMAIL_PASSWORD  // app password
